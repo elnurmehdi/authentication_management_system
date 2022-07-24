@@ -38,9 +38,9 @@ namespace user_authentication_management.Database.Models
         }
 
 
-        public string GetUserShortInfo()
+        public virtual string GetShortInfo()
         {
-            return $"Name: {Name}  Surname: {Surname}  Email: {Email}";
+            return $"Hello user, {Name}  {Surname}  {Email}";
         }
     }
 }

@@ -11,7 +11,7 @@ namespace user_authentication_management.Database.Repository
     {
         public static List<User> users { get; set; } = new List<User>()
         {
-            new User("Super", "Admin", "admin@gmail.com","123321")
+            new Admin("Super", "Admin", "admin@gmail.com","123321")
         };
 
 

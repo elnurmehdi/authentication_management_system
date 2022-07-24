@@ -39,6 +39,8 @@ namespace user_authentication_management.ApplicationLogic.Validations
 
         public static string GetName()
         {
+
+
             Console.Write("Please, enter user's name: ");
             string name = Console.ReadLine();
 
@@ -130,7 +132,7 @@ namespace user_authentication_management.ApplicationLogic.Validations
             {
                 User user = UserRepository.GetUserByEmail(email);
 
-                Console.WriteLine($"Welcome to your account {user.GetUserShortInfo()}!");
+                Console.WriteLine($"Welcome to your account {user.GetShortInfo()}!");
             }
 
             else
